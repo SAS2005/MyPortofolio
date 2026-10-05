@@ -1,0 +1,506 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Shucayb Ahmed – junior fullstackutvecklare i Kungälv. Projekt, utbildning och kontakt."
+    />
+    <title>Shucayb Ahmed — Fullstackutvecklare</title>
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="css/style.css?v=2" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip" href="#main"
+      ><span data-sv="Hoppa till innehåll" data-en="Skip to content">Hoppa till innehåll</span></a
+    >
+    <div class="page-shell">
+      <!-- Sidhuvud: navigation, språk och färgläge -->
+      <header class="site-header">
+        <a href="#" class="home-link">Shucayb Ahmed</a>
+        <nav
+          aria-label="Huvudmeny"
+          data-sv-aria-label="Huvudmeny"
+          data-en-aria-label="Main navigation"
+        >
+          <a href="#projekt"><span data-sv="Projekt" data-en="Projects">Projekt</span></a>
+          <a href="#om"><span data-sv="Om mig" data-en="About">Om mig</span></a>
+          <a href="#kontakt"><span data-sv="Kontakt" data-en="Contact">Kontakt</span></a>
+        </nav>
+        <div class="preferences">
+          <div
+            class="language-switch"
+            role="group"
+            aria-label="Välj språk"
+            data-sv-aria-label="Välj språk"
+            data-en-aria-label="Choose language"
+          >
+            <button type="button" data-language="sv" aria-pressed="true">SV</button>
+            <span aria-hidden="true">/</span>
+            <button type="button" data-language="en" aria-pressed="false">EN</button>
+          </div>
+          <button
+            class="theme-switch"
+            id="theme-toggle"
+            type="button"
+            aria-label="Byt till mörkt läge"
+            title="Mörkt läge"
+          >
+            <span aria-hidden="true">◐</span>
+          </button>
+        </div>
+      </header>
+
+      <main id="main">
+        <!-- Presentation och porträtt -->
+        <section class="intro">
+          <div class="intro-text">
+            <p class="location">
+              <span data-sv="Kungälv, Sverige" data-en="Kungälv, Sweden">Kungälv, Sverige</span>
+            </p>
+            <h1><span data-sv="Hej, jag är" data-en="Hi, I’m">Hej, jag är</span><br />Shucayb.</h1>
+            <p class="lead">
+              <span
+                data-sv="Jag pluggar data- och nätverksteknik och bygger webbapplikationer vid sidan av studierna."
+                data-en="I study Data and Network Engineering and build web applications alongside my studies."
+                >Jag pluggar data- och nätverksteknik och bygger webbapplikationer vid sidan av
+                studierna.</span
+              >
+            </p>
+            <p>
+              <span
+                data-sv="Jag arbetar med frontend, Python och SQL. Nu söker jag en praktikplats eller min första juniorroll som utvecklare."
+                data-en="I work with frontend, Python and SQL. I’m looking for an internship or my first junior developer role."
+                >Jag arbetar med frontend, Python och SQL. Nu söker jag en praktikplats eller min
+                första juniorroll som utvecklare.</span
+              >
+            </p>
+            <div class="intro-links">
+              <a class="underlined" href="mailto:11shucayb@gmail.com"
+                ><span data-sv="Skriv till mig" data-en="Get in touch">Skriv till mig</span>
+                <span aria-hidden="true">↗</span></a
+              >
+              <a class="underlined" href="assets/documents/shucayb-ahmed-cv.pdf" download
+                ><span data-sv="Ladda ner mitt CV" data-en="Download my CV">Ladda ner mitt CV</span>
+                <span aria-hidden="true">↓</span></a
+              >
+            </div>
+          </div>
+          <figure class="portrait">
+            <img src="assets/images/shucayb-profile.png" alt="Shucayb Ahmed" width="360" height="480" />
+            <figcaption>
+              Shucayb Ahmed
+              <span
+                ><span data-sv="Utvecklare &amp; student" data-en="Developer &amp; student"
+                  >Utvecklare &amp; student</span
+                ></span
+              >
+            </figcaption>
+          </figure>
+        </section>
+
+        <!-- Projekt: Aurora och BASHUF -->
+        <section class="work section" id="projekt">
+          <div class="section-title">
+            <h2>
+              <span data-sv="Det jag har jobbat med" data-en="What I’ve worked on"
+                >Det jag har jobbat med</span
+              >
+            </h2>
+            <span
+              ><span
+                data-sv="Webbutveckling &amp; UF"
+                data-en="Web development &amp; student enterprise"
+                >Webbutveckling &amp; UF</span
+              ></span
+            >
+          </div>
+          <p class="section-intro">
+            <span
+              data-sv="Här är två olika delar av min erfarenhet: en hotellwebbplats som vi byggde tillsammans och UF-företaget BASHUF."
+              data-en="Here are two different parts of my experience: a hotel website we built together and the student company BASHUF."
+              >Här är två olika delar av min erfarenhet: en hotellwebbplats som vi byggde
+              tillsammans och UF-företaget BASHUF.</span
+            >
+          </p>
+          <article class="aurora-project">
+            <div class="project-heading">
+              <div>
+                <p class="project-kind">
+                  <span data-sv="Webbprojekt · Grupparbete" data-en="Web project · Team project"
+                    >Webbprojekt · Grupparbete</span
+                  >
+                </p>
+                <h3>Aurora Grand Hotels</h3>
+              </div>
+              <span class="project-name-note">Hotel Booking System</span>
+            </div>
+            <p class="project-description">
+              <span
+                data-sv="Vi byggde en hotellwebbplats under namnet Aurora Grand Hotels. Bilderna visar startsidan, hotellöversikten, inloggningssidan och kontaktformuläret från vårt projekt."
+                data-en="We built a hotel website called Aurora Grand Hotels. These screenshots show the home page, hotel collection, sign-in page and contact form from our project."
+                >Vi byggde en hotellwebbplats under namnet Aurora Grand Hotels. Bilderna visar
+                startsidan, hotellöversikten, inloggningssidan och kontaktformuläret från vårt
+                projekt.</span
+              >
+            </p>
+            <figure class="project-gallery">
+              <div class="screenshot-frame" id="aurora-screenshot">
+                <img
+                  id="gallery-image"
+                  class="chrome-new"
+                  src="assets/images/projects/aurora/home.png"
+                  alt="Skärmbild från Aurora Grand Hotels: Startsida"
+                  width="2940"
+                  height="1912"
+                  loading="lazy"
+                />
+              </div>
+              <figcaption>
+                <span id="gallery-caption" aria-live="polite">Startsida</span
+                ><span
+                  ><span data-sv="Bilder från vårt projekt" data-en="Screenshots from our project"
+                    >Bilder från vårt projekt</span
+                  >
+                  · <span id="gallery-counter">1/4</span></span
+                >
+              </figcaption>
+            </figure>
+            <div
+              class="gallery-controls"
+              role="group"
+              aria-label="Välj projektbild"
+              data-sv-aria-label="Välj projektbild"
+              data-en-aria-label="Choose project screenshot"
+            >
+              <button
+                type="button"
+                data-image="0"
+                aria-pressed="true"
+                aria-controls="aurora-screenshot"
+              >
+                <span data-sv="Startsida" data-en="Home">Startsida</span>
+              </button>
+              <button
+                type="button"
+                data-image="1"
+                aria-pressed="false"
+                aria-controls="aurora-screenshot"
+              >
+                <span data-sv="Hotellöversikt" data-en="Hotel collection">Hotellöversikt</span>
+              </button>
+              <button
+                type="button"
+                data-image="2"
+                aria-pressed="false"
+                aria-controls="aurora-screenshot"
+              >
+                <span data-sv="Inloggning" data-en="Sign in">Inloggning</span>
+              </button>
+              <button
+                type="button"
+                data-image="3"
+                aria-pressed="false"
+                aria-controls="aurora-screenshot"
+              >
+                <span data-sv="Kontakt" data-en="Contact">Kontakt</span>
+              </button>
+            </div>
+            <a
+              class="project-question underlined"
+              href="mailto:11shucayb@gmail.com?subject=Aurora%20Grand%20Hotels"
+              ><span data-sv="Fråga mig om Aurora" data-en="Ask me about Aurora"
+                >Fråga mig om Aurora</span
+              >
+              ↗</a
+            >
+          </article>
+          <article class="uf-project">
+            <div>
+              <p class="project-kind">
+                <span data-sv="Ung Företagsamhet" data-en="Student enterprise"
+                  >Ung Företagsamhet</span
+                >
+              </p>
+              <h3>BASHUF</h3>
+            </div>
+            <div>
+              <p>
+                <span
+                  data-sv="BASHUF var ett UF-företag som jag var del av. Det är en separat erfarenhet från hotellwebbplatsen som vi byggde."
+                  data-en="BASHUF was a student company I was part of through Sweden’s Young Enterprise programme. It is a separate experience from the hotel website we built."
+                  >BASHUF var ett UF-företag som jag var del av. Det är en separat erfarenhet från
+                  hotellwebbplatsen som vi byggde.</span
+                >
+              </p>
+              <a class="underlined" href="mailto:11shucayb@gmail.com?subject=BASHUF"
+                ><span data-sv="Fråga mig om BASHUF" data-en="Ask me about BASHUF"
+                  >Fråga mig om BASHUF</span
+                >
+                ↗</a
+              >
+            </div>
+          </article>
+        </section>
+
+        <!-- Om mig och tekniska kunskaper -->
+        <section class="about section" id="om">
+          <h2><span data-sv="Lite om mig" data-en="A little about me">Lite om mig</span></h2>
+          <div class="about-columns">
+            <div class="about-copy">
+              <p>
+                <span
+                  data-sv="Jag läser data- och nätverksteknik på Högskolan Väst i Trollhättan. Där får jag lära mig om nätverk, operativsystem, databaser och hur IT-system hänger ihop."
+                  data-en="I’m studying Data and Network Engineering at University West in Trollhättan. My studies cover networks, operating systems, databases and how IT systems fit together."
+                  >Jag läser data- och nätverksteknik på Högskolan Väst i Trollhättan. Där får jag
+                  lära mig om nätverk, operativsystem, databaser och hur IT-system hänger
+                  ihop.</span
+                >
+              </p>
+              <p>
+                <span
+                  data-sv="I mina egna projekt har jag fått ta ansvar för hela arbetet, från den första idén till att få applikationen att fungera. Jag är van vid att arbeta självständigt och reda ut problem längs vägen."
+                  data-en="In my own projects, I’ve taken responsibility for the whole process, from the first idea to getting the application working. I’m used to working independently and figuring things out along the way."
+                  >I mina egna projekt har jag fått ta ansvar för hela arbetet, från den första idén
+                  till att få applikationen att fungera. Jag är van vid att arbeta självständigt och
+                  reda ut problem längs vägen.</span
+                >
+              </p>
+              <p>
+                <span
+                  data-sv="Det jag söker nu är ett team där jag kan bidra med det jag kan, ställa frågor och lära mig av andra utvecklare."
+                  data-en="What I’m looking for now is a team where I can contribute what I know, ask questions and learn from other developers."
+                  >Det jag söker nu är ett team där jag kan bidra med det jag kan, ställa frågor och
+                  lära mig av andra utvecklare.</span
+                >
+              </p>
+              <p class="signature">Shucayb</p>
+            </div>
+            <aside
+              class="toolbox"
+              aria-label="Tekniska kunskaper"
+              data-sv-aria-label="Tekniska kunskaper"
+              data-en-aria-label="Technical skills"
+            >
+              <h3>
+                <span data-sv="Det här arbetar jag med" data-en="What I work with"
+                  >Det här arbetar jag med</span
+                >
+              </h3>
+              <dl>
+                <dt>Frontend</dt>
+                <dd>HTML, CSS, JavaScript</dd>
+                <dt>Backend</dt>
+                <dd>Python, SQL</dd>
+                <dt>
+                  <span data-sv="Övriga kunskaper" data-en="Other skills">Övriga kunskaper</span>
+                </dt>
+                <dd>
+                  C++,
+                  <span
+                    data-sv="UI/UX-grunder, dokumentation och problemanalys"
+                    data-en="UI/UX fundamentals, documentation and problem analysis"
+                    >UI/UX-grunder, dokumentation och problemanalys</span
+                  >
+                </dd>
+                <dt>
+                  <span data-sv="System &amp; nätverk" data-en="Systems &amp; networks"
+                    >System &amp; nätverk</span
+                  >
+                </dt>
+                <dd>
+                  Windows, macOS,
+                  <span data-sv="nätverksgrunder" data-en="networking fundamentals"
+                    >nätverksgrunder</span
+                  >
+                </dd>
+              </dl>
+            </aside>
+          </div>
+        </section>
+
+        <!-- Utbildning och språk -->
+        <section class="background section">
+          <h2>
+            <span data-sv="Utbildning &amp; språk" data-en="Education &amp; languages"
+              >Utbildning &amp; språk</span
+            >
+          </h2>
+          <div class="background-grid">
+            <div class="education">
+              <article>
+                <span class="date">2024–</span>
+                <div>
+                  <h3 class="school-title">
+                    <img
+                      class="school-logo"
+                      src="assets/images/logos/university-west.png"
+                      alt=""
+                      width="194"
+                      height="194"
+                      loading="lazy"
+                    />
+                    <span data-sv="Högskolan Väst" data-en="University West">Högskolan Väst</span>
+                  </h3>
+                  <p>
+                    <span
+                      data-sv="Data- och nätverksteknik · Trollhättan"
+                      data-en="Data and Network Engineering · Trollhättan"
+                      >Data- och nätverksteknik · Trollhättan</span
+                    >
+                  </p>
+                </div>
+              </article>
+              <article>
+                <span class="date">2021–2024</span>
+                <div>
+                  <h3 class="school-title">
+                    <img
+                      class="school-logo school-logo-wide"
+                      src="assets/images/logos/amerikanska-gymnasiet.png"
+                      alt=""
+                      width="580"
+                      height="186"
+                      loading="lazy"
+                    />
+                    <span>Amerikanska Gymnasiet</span>
+                  </h3>
+                  <p>
+                    <span
+                      data-sv="Teknik &amp; IT, programmering · Göteborg"
+                      data-en="Technology &amp; IT, programming · Gothenburg"
+                      >Teknik &amp; IT, programmering · Göteborg</span
+                    >
+                  </p>
+                </div>
+              </article>
+              <article>
+                <span class="date">Cisco</span>
+                <div>
+                  <h3>CCNA 1</h3>
+                  <p>Introduction to Networks</p>
+                  <a
+                    class="credential-card"
+                    href="https://www.credly.com/badges/8c6be5e0-ff0f-476c-bd60-8ed418ef4d1a/linked_in_profile"
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label="Visa verifierad Cisco CCNA-certifiering på Credly"
+                    data-sv-aria-label="Visa verifierad Cisco CCNA-certifiering på Credly"
+                    data-en-aria-label="View verified Cisco CCNA credential on Credly"
+                  >
+                    <img
+                      class="credential-badge"
+                      src="assets/images/ccna-introduction-to-networks.png"
+                      alt="Cisco Networking Academy – Verified CCNA: Introduction to Networks"
+                      width="600"
+                      height="600"
+                      loading="lazy"
+                    />
+                    <span class="credential-info">
+                      <strong data-sv="Verifierad certifiering" data-en="Verified credential"
+                        >Verifierad certifiering</strong
+                      >
+                      <span>Cisco Networking Academy</span>
+                      <span class="credential-action"
+                        ><img
+                          src="assets/images/logos/credly.svg"
+                          alt=""
+                          width="15"
+                          height="15"
+                        /><span data-sv="Visa på Credly" data-en="View on Credly"
+                          >Visa på Credly</span
+                        >
+                        ↗</span
+                      >
+                    </span>
+                  </a>
+                </div>
+              </article>
+            </div>
+            <div class="languages">
+              <h3>
+                <span data-sv="Språk jag talar" data-en="Languages I speak">Språk jag talar</span>
+              </h3>
+              <dl>
+                <div>
+                  <dt><span data-sv="Svenska" data-en="Swedish">Svenska</span></dt>
+                  <dd><span data-sv="Flytande" data-en="Fluent">Flytande</span></dd>
+                </div>
+                <div>
+                  <dt><span data-sv="Engelska" data-en="English">Engelska</span></dt>
+                  <dd><span data-sv="Flytande" data-en="Fluent">Flytande</span></dd>
+                </div>
+                <div>
+                  <dt><span data-sv="Somaliska" data-en="Somali">Somaliska</span></dt>
+                  <dd><span data-sv="Modersmål" data-en="Native">Modersmål</span></dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+        </section>
+
+        <!-- Kontakt och nedladdningar -->
+        <section class="contact section" id="kontakt">
+          <h2><span data-sv="Hör gärna av dig." data-en="Let’s talk.">Hör gärna av dig.</span></h2>
+          <p>
+            <span
+              data-sv="Har ni en praktikplats eller söker en junior utvecklare? Skicka ett mejl så berättar jag mer om mig själv och mina projekt."
+              data-en="Have an internship opening or a junior developer role? Send me an email and I’ll tell you more about myself and my projects."
+              >Har ni en praktikplats eller söker en junior utvecklare? Skicka ett mejl så berättar
+              jag mer om mig själv och mina projekt.</span
+            >
+          </p>
+          <a class="email" href="mailto:11shucayb@gmail.com"
+            >11shucayb@gmail.com <span aria-hidden="true">↗</span></a
+          >
+          <div class="contact-links">
+            <a
+              href="https://www.linkedin.com/in/shucayb-ahmed-696b33253"
+              target="_blank"
+              rel="noreferrer"
+              ><img
+                class="link-logo"
+                src="assets/images/logos/linkedin.svg"
+                alt=""
+                width="18"
+                height="18"
+              />LinkedIn ↗</a
+            >
+            <a href="https://github.com/SAS2005" target="_blank" rel="noreferrer"
+              ><img
+                class="link-logo"
+                src="assets/images/logos/github.svg"
+                alt=""
+                width="18"
+                height="18"
+              />GitHub ↗</a
+            >
+            <a
+              href="https://www.credly.com/badges/8c6be5e0-ff0f-476c-bd60-8ed418ef4d1a/linked_in_profile"
+              target="_blank"
+              rel="noreferrer"
+              ><img
+                class="link-logo"
+                src="assets/images/logos/credly.svg"
+                alt=""
+                width="18"
+                height="18"
+              />Credly ↗</a
+            >
+            <a href="assets/documents/shucayb-ahmed-cv.pdf" download>CV ↓</a>
+            <a href="assets/documents/shucayb-ahmed-personligt-brev.pdf" download
+              ><span data-sv="Personligt brev" data-en="Cover letter">Personligt brev</span> ↓</a
+            >
+          </div>
+        </section>
+      </main>
+      <!-- Sidfot -->
+      <footer>
+        <span>Shucayb Ahmed</span
+        ><a href="#"><span data-sv="Till toppen" data-en="Back to top">Till toppen</span> ↑</a>
+      </footer>
+    </div>
+  </body>
+</html>
