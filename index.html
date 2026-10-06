@@ -1,506 +1,144 @@
 <!doctype html>
 <html lang="sv">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Shucayb Ahmed – junior fullstackutvecklare i Kungälv. Projekt, utbildning och kontakt."
-    />
-    <title>Shucayb Ahmed — Fullstackutvecklare</title>
-    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="css/style.css?v=2" />
-    <script src="js/script.js" defer></script>
-  </head>
-  <body>
-    <a class="skip" href="#main"
-      ><span data-sv="Hoppa till innehåll" data-en="Skip to content">Hoppa till innehåll</span></a
-    >
-    <div class="page-shell">
-      <!-- Sidhuvud: navigation, språk och färgläge -->
-      <header class="site-header">
-        <a href="#" class="home-link">Shucayb Ahmed</a>
-        <nav
-          aria-label="Huvudmeny"
-          data-sv-aria-label="Huvudmeny"
-          data-en-aria-label="Main navigation"
-        >
-          <a href="#projekt"><span data-sv="Projekt" data-en="Projects">Projekt</span></a>
-          <a href="#om"><span data-sv="Om mig" data-en="About">Om mig</span></a>
-          <a href="#kontakt"><span data-sv="Kontakt" data-en="Contact">Kontakt</span></a>
-        </nav>
-        <div class="preferences">
-          <div
-            class="language-switch"
-            role="group"
-            aria-label="Välj språk"
-            data-sv-aria-label="Välj språk"
-            data-en-aria-label="Choose language"
-          >
-            <button type="button" data-language="sv" aria-pressed="true">SV</button>
-            <span aria-hidden="true">/</span>
-            <button type="button" data-language="en" aria-pressed="false">EN</button>
-          </div>
-          <button
-            class="theme-switch"
-            id="theme-toggle"
-            type="button"
-            aria-label="Byt till mörkt läge"
-            title="Mörkt läge"
-          >
-            <span aria-hidden="true">◐</span>
-          </button>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f7f3">
+  <meta name="description" content="Portfolio för Shucayb Ahmed, student inom data- och nätverksteknik med projekt inom mjukvaruutveckling, backend, nätverk, maskininlärning och inbyggda system.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sas2005.github.io/MyPortofolio/">
+  <meta property="og:title" content="Shucayb Ahmed | Software Developer">
+  <meta property="og:description" content="Software development, backend, networking, machine learning and embedded systems.">
+  <meta property="og:image" content="https://sas2005.github.io/MyPortofolio/assets/images/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://sas2005.github.io/MyPortofolio/">
+  <title>Shucayb Ahmed | Software Developer &amp; Data/Network Engineering Student</title>
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css?v=3">
+  <script src="js/script.js?v=3" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main"><span data-sv="Hoppa till innehåll" data-en="Skip to content">Hoppa till innehåll</span></a>
+  <div class="page-shell">
+    <header class="site-header">
+      <a href="#hem" class="home-link">Shucayb Ahmed</a>
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="main-navigation" aria-label="Öppna meny" data-sv-aria-label="Öppna meny" data-en-aria-label="Open menu"><span></span><span></span><span></span></button>
+      <nav id="main-navigation" aria-label="Huvudmeny" data-sv-aria-label="Huvudmeny" data-en-aria-label="Main navigation">
+        <a href="#om"><span data-sv="Om mig" data-en="About">Om mig</span></a>
+        <a href="#projekt"><span data-sv="Projekt" data-en="Projects">Projekt</span></a>
+        <a href="#kunskaper"><span data-sv="Kunskaper" data-en="Skills">Kunskaper</span></a>
+        <a href="#utbildning"><span data-sv="Utbildning" data-en="Education">Utbildning</span></a>
+        <a href="#kontakt"><span data-sv="Kontakt" data-en="Contact">Kontakt</span></a>
+      </nav>
+      <div class="preferences">
+        <div class="language-switch" role="group" aria-label="Välj språk" data-sv-aria-label="Välj språk" data-en-aria-label="Choose language">
+          <button type="button" data-language="sv" aria-pressed="true">SV</button><span aria-hidden="true">/</span><button type="button" data-language="en" aria-pressed="false">EN</button>
         </div>
-      </header>
+        <button class="theme-switch" id="theme-toggle" type="button" aria-label="Byt färgläge"><span aria-hidden="true">◐</span></button>
+      </div>
+    </header>
 
-      <main id="main">
-        <!-- Presentation och porträtt -->
-        <section class="intro">
-          <div class="intro-text">
-            <p class="location">
-              <span data-sv="Kungälv, Sverige" data-en="Kungälv, Sweden">Kungälv, Sverige</span>
-            </p>
-            <h1><span data-sv="Hej, jag är" data-en="Hi, I’m">Hej, jag är</span><br />Shucayb.</h1>
-            <p class="lead">
-              <span
-                data-sv="Jag pluggar data- och nätverksteknik och bygger webbapplikationer vid sidan av studierna."
-                data-en="I study Data and Network Engineering and build web applications alongside my studies."
-                >Jag pluggar data- och nätverksteknik och bygger webbapplikationer vid sidan av
-                studierna.</span
-              >
-            </p>
-            <p>
-              <span
-                data-sv="Jag arbetar med frontend, Python och SQL. Nu söker jag en praktikplats eller min första juniorroll som utvecklare."
-                data-en="I work with frontend, Python and SQL. I’m looking for an internship or my first junior developer role."
-                >Jag arbetar med frontend, Python och SQL. Nu söker jag en praktikplats eller min
-                första juniorroll som utvecklare.</span
-              >
-            </p>
-            <div class="intro-links">
-              <a class="underlined" href="mailto:11shucayb@gmail.com"
-                ><span data-sv="Skriv till mig" data-en="Get in touch">Skriv till mig</span>
-                <span aria-hidden="true">↗</span></a
-              >
-              <a class="underlined" href="assets/documents/shucayb-ahmed-cv.pdf" download
-                ><span data-sv="Ladda ner mitt CV" data-en="Download my CV">Ladda ner mitt CV</span>
-                <span aria-hidden="true">↓</span></a
-              >
-            </div>
+    <main id="main">
+      <section class="hero" id="hem">
+        <div class="hero-copy">
+          <p class="eyebrow"><span data-sv="Mjukvaruutvecklare · Kungälv, Sverige" data-en="Software Developer · Kungälv, Sweden">Mjukvaruutvecklare · Kungälv, Sverige</span></p>
+          <h1>Shucayb Ahmed</h1>
+          <h2><span data-sv="Student inom data- och nätverksteknik" data-en="Data &amp; Network Engineering Student">Student inom data- och nätverksteknik</span></h2>
+          <p class="hero-lead"><span data-sv="Jag studerar på Högskolan Väst och arbetar med mjukvaruutveckling, backend, nätverk, maskininlärning och inbyggda system. Jag använder främst Python, C++, JavaScript och SQL och söker praktik eller en junior utvecklarroll." data-en="I study at University West and work across software development, backend systems, networking, machine learning and embedded systems. I mainly use Python, C++, JavaScript and SQL, and I am looking for an internship or junior developer role.">Jag studerar på Högskolan Väst och arbetar med mjukvaruutveckling, backend, nätverk, maskininlärning och inbyggda system. Jag använder främst Python, C++, JavaScript och SQL och söker praktik eller en junior utvecklarroll.</span></p>
+          <div class="hero-actions">
+            <a class="button primary" href="#projekt"><span data-sv="Se projekt" data-en="View projects">Se projekt</span></a>
+            <a class="button" href="assets/documents/shucayb-ahmed-cv.pdf" download><span data-sv="Ladda ner CV" data-en="Download CV">Ladda ner CV</span> ↓</a>
+            <a class="text-link" href="https://github.com/SAS2005" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+            <a class="text-link" href="https://www.linkedin.com/in/shucayb-ahmed-696b33253" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
           </div>
-          <figure class="portrait">
-            <img src="assets/images/shucayb-profile.png" alt="Shucayb Ahmed" width="360" height="480" />
-            <figcaption>
-              Shucayb Ahmed
-              <span
-                ><span data-sv="Utvecklare &amp; student" data-en="Developer &amp; student"
-                  >Utvecklare &amp; student</span
-                ></span
-              >
-            </figcaption>
+        </div>
+        <figure class="portrait">
+          <img src="assets/images/shucayb-profile.png" alt="Shucayb Ahmed" width="640" height="640" fetchpriority="high">
+          <figcaption><span data-sv="Mjukvaruutvecklare &amp; student" data-en="Software developer &amp; student">Mjukvaruutvecklare &amp; student</span></figcaption>
+        </figure>
+      </section>
+
+      <section class="section about" id="om">
+        <div class="section-heading"><p class="eyebrow"><span data-sv="Om mig" data-en="About me">Om mig</span></p><h2><span data-sv="Jag vill förstå hur hela systemet fungerar." data-en="I like understanding how the whole system works.">Jag vill förstå hur hela systemet fungerar.</span></h2></div>
+        <div class="about-copy">
+          <p><span data-sv="På utbildningen i data- och nätverksteknik arbetar jag med programmering, datornätverk, databaser, AI och inbyggda system. Mina projekt sträcker sig från en fullstackapplikation till nätverkssimulering, trafikklassificering och styrning på ESP32." data-en="In the Data and Network Engineering programme, I work with programming, computer networks, databases, AI and embedded systems. My projects range from a full-stack application to network simulation, traffic classification and ESP32 control logic.">På utbildningen i data- och nätverksteknik arbetar jag med programmering, datornätverk, databaser, AI och inbyggda system. Mina projekt sträcker sig från en fullstackapplikation till nätverkssimulering, trafikklassificering och styrning på ESP32.</span></p>
+          <p><span data-sv="Jag söker ett team där jag kan bidra med det jag redan kan, ställa frågor och fortsätta lära mig av erfarna utvecklare." data-en="I am looking for a team where I can contribute what I already know, ask questions and continue learning from experienced developers.">Jag söker ett team där jag kan bidra med det jag redan kan, ställa frågor och fortsätta lära mig av erfarna utvecklare.</span></p>
+        </div>
+      </section>
+
+      <section class="section projects" id="projekt">
+        <div class="section-heading split-heading"><div><p class="eyebrow"><span data-sv="Utvalda projekt" data-en="Featured projects">Utvalda projekt</span></p><h2><span data-sv="Tekniskt arbete" data-en="Engineering work">Tekniskt arbete</span></h2></div><p><span data-sv="Fullstack, nätverk, maskininlärning och inbyggda system." data-en="Full-stack, networking, machine learning and embedded systems.">Fullstack, nätverk, maskininlärning och inbyggda system.</span></p></div>
+
+        <article class="project-card featured-project">
+          <div class="project-content">
+            <div class="project-meta"><span data-sv="Fullstackapplikation" data-en="Full-Stack Web Application">Fullstackapplikation</span><span data-sv="Grupprojekt" data-en="Team project">Grupprojekt</span></div>
+            <h3>Aurora Grand Hotels</h3>
+            <p><span data-sv="Ett hotellbokningssystem med FastAPI, MySQL och JavaScript. Teamet byggde en klient–server-arkitektur och jag arbetade med API-integration, autentisering, bokningsflöde och prisberäkning i backend." data-en="A hotel booking system built with FastAPI, MySQL and JavaScript. The team built a client–server architecture, and I worked on API integration, authentication, the booking flow and backend price calculations.">Ett hotellbokningssystem med FastAPI, MySQL och JavaScript. Teamet byggde en klient–server-arkitektur och jag arbetade med API-integration, autentisering, bokningsflöde och prisberäkning i backend.</span></p>
+            <ul class="highlights">
+              <li><span data-sv="REST-API med FastAPI och MySQL-integration" data-en="REST API with FastAPI and MySQL integration">REST-API med FastAPI och MySQL-integration</span></li>
+              <li><span data-sv="JWT-autentisering och Argon2-hashning" data-en="JWT authentication and Argon2 password hashing">JWT-autentisering och Argon2-hashning</span></li>
+              <li><span data-sv="Bokningar, tillval, serverbaserad prisberäkning och e-postverifiering" data-en="Bookings, optional extras, server-side price calculation and email verification">Bokningar, tillval, serverbaserad prisberäkning och e-postverifiering</span></li>
+            </ul>
+            <div class="tech-list"><span>Python</span><span>FastAPI</span><span>MySQL</span><span>JavaScript</span><span>REST API</span><span>JWT</span></div>
+            <div class="project-links"><a href="https://github.com/Ayub-Ali-Barre/Webbsida-HotelBokning" target="_blank" rel="noopener noreferrer"><span data-sv="Visa på GitHub" data-en="View on GitHub">Visa på GitHub</span> ↗</a></div>
+          </div>
+          <figure class="project-gallery">
+            <div class="screenshot-frame" id="aurora-screenshot"><img id="gallery-image" class="chrome-new" src="assets/images/projects/aurora/home.png" alt="Skärmbild från Aurora Grand Hotels: startsida" width="1600" height="1041" loading="lazy"></div>
+            <figcaption><span id="gallery-caption" aria-live="polite">Startsida</span><span id="gallery-counter">1/4</span></figcaption>
+            <div class="gallery-controls" role="group" aria-label="Välj projektbild" data-sv-aria-label="Välj projektbild" data-en-aria-label="Choose project screenshot">
+              <button type="button" data-image="0" aria-pressed="true"><span data-sv="Startsida" data-en="Home">Startsida</span></button>
+              <button type="button" data-image="1" aria-pressed="false"><span data-sv="Hotell" data-en="Hotels">Hotell</span></button>
+              <button type="button" data-image="2" aria-pressed="false"><span data-sv="Inloggning" data-en="Sign in">Inloggning</span></button>
+              <button type="button" data-image="3" aria-pressed="false"><span data-sv="Kontakt" data-en="Contact">Kontakt</span></button>
+            </div>
           </figure>
-        </section>
+        </article>
 
-        <!-- Projekt: Aurora och BASHUF -->
-        <section class="work section" id="projekt">
-          <div class="section-title">
-            <h2>
-              <span data-sv="Det jag har jobbat med" data-en="What I’ve worked on"
-                >Det jag har jobbat med</span
-              >
-            </h2>
-            <span
-              ><span
-                data-sv="Webbutveckling &amp; UF"
-                data-en="Web development &amp; student enterprise"
-                >Webbutveckling &amp; UF</span
-              ></span
-            >
-          </div>
-          <p class="section-intro">
-            <span
-              data-sv="Här är två olika delar av min erfarenhet: en hotellwebbplats som vi byggde tillsammans och UF-företaget BASHUF."
-              data-en="Here are two different parts of my experience: a hotel website we built together and the student company BASHUF."
-              >Här är två olika delar av min erfarenhet: en hotellwebbplats som vi byggde
-              tillsammans och UF-företaget BASHUF.</span
-            >
-          </p>
-          <article class="aurora-project">
-            <div class="project-heading">
-              <div>
-                <p class="project-kind">
-                  <span data-sv="Webbprojekt · Grupparbete" data-en="Web project · Team project"
-                    >Webbprojekt · Grupparbete</span
-                  >
-                </p>
-                <h3>Aurora Grand Hotels</h3>
-              </div>
-              <span class="project-name-note">Hotel Booking System</span>
-            </div>
-            <p class="project-description">
-              <span
-                data-sv="Vi byggde en hotellwebbplats under namnet Aurora Grand Hotels. Bilderna visar startsidan, hotellöversikten, inloggningssidan och kontaktformuläret från vårt projekt."
-                data-en="We built a hotel website called Aurora Grand Hotels. These screenshots show the home page, hotel collection, sign-in page and contact form from our project."
-                >Vi byggde en hotellwebbplats under namnet Aurora Grand Hotels. Bilderna visar
-                startsidan, hotellöversikten, inloggningssidan och kontaktformuläret från vårt
-                projekt.</span
-              >
-            </p>
-            <figure class="project-gallery">
-              <div class="screenshot-frame" id="aurora-screenshot">
-                <img
-                  id="gallery-image"
-                  class="chrome-new"
-                  src="assets/images/projects/aurora/home.png"
-                  alt="Skärmbild från Aurora Grand Hotels: Startsida"
-                  width="2940"
-                  height="1912"
-                  loading="lazy"
-                />
-              </div>
-              <figcaption>
-                <span id="gallery-caption" aria-live="polite">Startsida</span
-                ><span
-                  ><span data-sv="Bilder från vårt projekt" data-en="Screenshots from our project"
-                    >Bilder från vårt projekt</span
-                  >
-                  · <span id="gallery-counter">1/4</span></span
-                >
-              </figcaption>
-            </figure>
-            <div
-              class="gallery-controls"
-              role="group"
-              aria-label="Välj projektbild"
-              data-sv-aria-label="Välj projektbild"
-              data-en-aria-label="Choose project screenshot"
-            >
-              <button
-                type="button"
-                data-image="0"
-                aria-pressed="true"
-                aria-controls="aurora-screenshot"
-              >
-                <span data-sv="Startsida" data-en="Home">Startsida</span>
-              </button>
-              <button
-                type="button"
-                data-image="1"
-                aria-pressed="false"
-                aria-controls="aurora-screenshot"
-              >
-                <span data-sv="Hotellöversikt" data-en="Hotel collection">Hotellöversikt</span>
-              </button>
-              <button
-                type="button"
-                data-image="2"
-                aria-pressed="false"
-                aria-controls="aurora-screenshot"
-              >
-                <span data-sv="Inloggning" data-en="Sign in">Inloggning</span>
-              </button>
-              <button
-                type="button"
-                data-image="3"
-                aria-pressed="false"
-                aria-controls="aurora-screenshot"
-              >
-                <span data-sv="Kontakt" data-en="Contact">Kontakt</span>
-              </button>
-            </div>
-            <a
-              class="project-question underlined"
-              href="mailto:11shucayb@gmail.com?subject=Aurora%20Grand%20Hotels"
-              ><span data-sv="Fråga mig om Aurora" data-en="Ask me about Aurora"
-                >Fråga mig om Aurora</span
-              >
-              ↗</a
-            >
-          </article>
-          <article class="uf-project">
-            <div>
-              <p class="project-kind">
-                <span data-sv="Ung Företagsamhet" data-en="Student enterprise"
-                  >Ung Företagsamhet</span
-                >
-              </p>
-              <h3>BASHUF</h3>
-            </div>
-            <div>
-              <p>
-                <span
-                  data-sv="BASHUF var ett UF-företag som jag var del av. Det är en separat erfarenhet från hotellwebbplatsen som vi byggde."
-                  data-en="BASHUF was a student company I was part of through Sweden’s Young Enterprise programme. It is a separate experience from the hotel website we built."
-                  >BASHUF var ett UF-företag som jag var del av. Det är en separat erfarenhet från
-                  hotellwebbplatsen som vi byggde.</span
-                >
-              </p>
-              <a class="underlined" href="mailto:11shucayb@gmail.com?subject=BASHUF"
-                ><span data-sv="Fråga mig om BASHUF" data-en="Ask me about BASHUF"
-                  >Fråga mig om BASHUF</span
-                >
-                ↗</a
-              >
-            </div>
-          </article>
-        </section>
+        <div class="project-grid">
+          <article class="project-card"><div class="project-meta"><span>AI + Networking</span><span data-sv="Kursprojekt" data-en="University project">Kursprojekt</span></div><h3>VPN vs Non-VPN Classification</h3><p><span data-sv="Binär klassificering av nätverkstrafik från ISCXVPN2016. Jag förberedde trafikdata, tränade ett beslutsträd och utvärderade modellen med precision, recall, F1 och en confusion matrix." data-en="Binary classification of network traffic from ISCXVPN2016. I prepared traffic data, trained a decision tree and evaluated it using precision, recall, F1 and a confusion matrix.">Binär klassificering av nätverkstrafik från ISCXVPN2016. Jag förberedde trafikdata, tränade ett beslutsträd och utvärderade modellen med precision, recall, F1 och en confusion matrix.</span></p><ul class="highlights"><li><span data-sv="Databehandling och reproducerbar träningspipeline" data-en="Data preparation and a reproducible training pipeline">Databehandling och reproducerbar träningspipeline</span></li><li><span data-sv="Femfaldig korsvalidering och test på separat datamängd" data-en="Five-fold cross-validation and held-out testing">Femfaldig korsvalidering och test på separat datamängd</span></li></ul><div class="tech-list"><span>Python</span><span>pandas</span><span>scikit-learn</span><span>Google Colab</span><span>Network Traffic</span></div></article>
 
-        <!-- Om mig och tekniska kunskaper -->
-        <section class="about section" id="om">
-          <h2><span data-sv="Lite om mig" data-en="A little about me">Lite om mig</span></h2>
-          <div class="about-columns">
-            <div class="about-copy">
-              <p>
-                <span
-                  data-sv="Jag läser data- och nätverksteknik på Högskolan Väst i Trollhättan. Där får jag lära mig om nätverk, operativsystem, databaser och hur IT-system hänger ihop."
-                  data-en="I’m studying Data and Network Engineering at University West in Trollhättan. My studies cover networks, operating systems, databases and how IT systems fit together."
-                  >Jag läser data- och nätverksteknik på Högskolan Väst i Trollhättan. Där får jag
-                  lära mig om nätverk, operativsystem, databaser och hur IT-system hänger
-                  ihop.</span
-                >
-              </p>
-              <p>
-                <span
-                  data-sv="I mina egna projekt har jag fått ta ansvar för hela arbetet, från den första idén till att få applikationen att fungera. Jag är van vid att arbeta självständigt och reda ut problem längs vägen."
-                  data-en="In my own projects, I’ve taken responsibility for the whole process, from the first idea to getting the application working. I’m used to working independently and figuring things out along the way."
-                  >I mina egna projekt har jag fått ta ansvar för hela arbetet, från den första idén
-                  till att få applikationen att fungera. Jag är van vid att arbeta självständigt och
-                  reda ut problem längs vägen.</span
-                >
-              </p>
-              <p>
-                <span
-                  data-sv="Det jag söker nu är ett team där jag kan bidra med det jag kan, ställa frågor och lära mig av andra utvecklare."
-                  data-en="What I’m looking for now is a team where I can contribute what I know, ask questions and learn from other developers."
-                  >Det jag söker nu är ett team där jag kan bidra med det jag kan, ställa frågor och
-                  lära mig av andra utvecklare.</span
-                >
-              </p>
-              <p class="signature">Shucayb</p>
-            </div>
-            <aside
-              class="toolbox"
-              aria-label="Tekniska kunskaper"
-              data-sv-aria-label="Tekniska kunskaper"
-              data-en-aria-label="Technical skills"
-            >
-              <h3>
-                <span data-sv="Det här arbetar jag med" data-en="What I work with"
-                  >Det här arbetar jag med</span
-                >
-              </h3>
-              <dl>
-                <dt>Frontend</dt>
-                <dd>HTML, CSS, JavaScript</dd>
-                <dt>Backend</dt>
-                <dd>Python, SQL</dd>
-                <dt>
-                  <span data-sv="Övriga kunskaper" data-en="Other skills">Övriga kunskaper</span>
-                </dt>
-                <dd>
-                  C++,
-                  <span
-                    data-sv="UI/UX-grunder, dokumentation och problemanalys"
-                    data-en="UI/UX fundamentals, documentation and problem analysis"
-                    >UI/UX-grunder, dokumentation och problemanalys</span
-                  >
-                </dd>
-                <dt>
-                  <span data-sv="System &amp; nätverk" data-en="Systems &amp; networks"
-                    >System &amp; nätverk</span
-                  >
-                </dt>
-                <dd>
-                  Windows, macOS,
-                  <span data-sv="nätverksgrunder" data-en="networking fundamentals"
-                    >nätverksgrunder</span
-                  >
-                </dd>
-              </dl>
-            </aside>
-          </div>
-        </section>
+          <article class="project-card"><div class="project-meta"><span data-sv="Systemdesign" data-en="System design">Systemdesign</span><span data-sv="Pågående" data-en="In progress">Pågående</span></div><h3><span data-sv="Identifiering på seriell buss" data-en="Serial Bus Device Identification">Identifiering på seriell buss</span></h3><p><span data-sv="Ett pågående projekt för att automatiskt identifiera och övervaka flera LED-enheter som delar samma seriella kommunikationsbuss. Arbetet jämför olika mjukvarulösningar för identifiering och övervakning." data-en="An ongoing project for automatically identifying and monitoring multiple LED devices on a shared serial communication bus. The work compares different software approaches to identification and monitoring.">Ett pågående projekt för att automatiskt identifiera och övervaka flera LED-enheter som delar samma seriella kommunikationsbuss. Arbetet jämför olika mjukvarulösningar för identifiering och övervakning.</span></p><div class="tech-list"><span>C++</span><span>Serial Communication</span><span>Device Monitoring</span><span>System Design</span></div></article>
 
-        <!-- Utbildning och språk -->
-        <section class="background section">
-          <h2>
-            <span data-sv="Utbildning &amp; språk" data-en="Education &amp; languages"
-              >Utbildning &amp; språk</span
-            >
-          </h2>
-          <div class="background-grid">
-            <div class="education">
-              <article>
-                <span class="date">2024–</span>
-                <div>
-                  <h3 class="school-title">
-                    <img
-                      class="school-logo"
-                      src="assets/images/logos/university-west.png"
-                      alt=""
-                      width="194"
-                      height="194"
-                      loading="lazy"
-                    />
-                    <span data-sv="Högskolan Väst" data-en="University West">Högskolan Väst</span>
-                  </h3>
-                  <p>
-                    <span
-                      data-sv="Data- och nätverksteknik · Trollhättan"
-                      data-en="Data and Network Engineering · Trollhättan"
-                      >Data- och nätverksteknik · Trollhättan</span
-                    >
-                  </p>
-                </div>
-              </article>
-              <article>
-                <span class="date">2021–2024</span>
-                <div>
-                  <h3 class="school-title">
-                    <img
-                      class="school-logo school-logo-wide"
-                      src="assets/images/logos/amerikanska-gymnasiet.png"
-                      alt=""
-                      width="580"
-                      height="186"
-                      loading="lazy"
-                    />
-                    <span>Amerikanska Gymnasiet</span>
-                  </h3>
-                  <p>
-                    <span
-                      data-sv="Teknik &amp; IT, programmering · Göteborg"
-                      data-en="Technology &amp; IT, programming · Gothenburg"
-                      >Teknik &amp; IT, programmering · Göteborg</span
-                    >
-                  </p>
-                </div>
-              </article>
-              <article>
-                <span class="date">Cisco</span>
-                <div>
-                  <h3>CCNA 1</h3>
-                  <p>Introduction to Networks</p>
-                  <a
-                    class="credential-card"
-                    href="https://www.credly.com/badges/8c6be5e0-ff0f-476c-bd60-8ed418ef4d1a/linked_in_profile"
-                    target="_blank"
-                    rel="noreferrer"
-                    aria-label="Visa verifierad Cisco CCNA-certifiering på Credly"
-                    data-sv-aria-label="Visa verifierad Cisco CCNA-certifiering på Credly"
-                    data-en-aria-label="View verified Cisco CCNA credential on Credly"
-                  >
-                    <img
-                      class="credential-badge"
-                      src="assets/images/ccna-introduction-to-networks.png"
-                      alt="Cisco Networking Academy – Verified CCNA: Introduction to Networks"
-                      width="600"
-                      height="600"
-                      loading="lazy"
-                    />
-                    <span class="credential-info">
-                      <strong data-sv="Verifierad certifiering" data-en="Verified credential"
-                        >Verifierad certifiering</strong
-                      >
-                      <span>Cisco Networking Academy</span>
-                      <span class="credential-action"
-                        ><img
-                          src="assets/images/logos/credly.svg"
-                          alt=""
-                          width="15"
-                          height="15"
-                        /><span data-sv="Visa på Credly" data-en="View on Credly"
-                          >Visa på Credly</span
-                        >
-                        ↗</span
-                      >
-                    </span>
-                  </a>
-                </div>
-              </article>
-            </div>
-            <div class="languages">
-              <h3>
-                <span data-sv="Språk jag talar" data-en="Languages I speak">Språk jag talar</span>
-              </h3>
-              <dl>
-                <div>
-                  <dt><span data-sv="Svenska" data-en="Swedish">Svenska</span></dt>
-                  <dd><span data-sv="Flytande" data-en="Fluent">Flytande</span></dd>
-                </div>
-                <div>
-                  <dt><span data-sv="Engelska" data-en="English">Engelska</span></dt>
-                  <dd><span data-sv="Flytande" data-en="Fluent">Flytande</span></dd>
-                </div>
-                <div>
-                  <dt><span data-sv="Somaliska" data-en="Somali">Somaliska</span></dt>
-                  <dd><span data-sv="Modersmål" data-en="Native">Modersmål</span></dd>
-                </div>
-              </dl>
-            </div>
-          </div>
-        </section>
+          <article class="project-card"><div class="project-meta"><span data-sv="Nätverkssimulering" data-en="Network simulation">Nätverkssimulering</span><span data-sv="Kursprojekt" data-en="University project">Kursprojekt</span></div><h3>ns-3 TCP Simulation</h3><p><span data-sv="Nätverkssimulering i ns-3 för att studera TCP-beteende och jämföra Cubic och NewReno. Resultat samlades in och visualiserades för att analysera congestion window och nätverkets beteende." data-en="Network simulation in ns-3 to study TCP behaviour and compare Cubic with NewReno. Results were collected and visualized to analyse congestion-window and network behaviour.">Nätverkssimulering i ns-3 för att studera TCP-beteende och jämföra Cubic och NewReno. Resultat samlades in och visualiserades för att analysera congestion window och nätverkets beteende.</span></p><div class="tech-list"><span>C++</span><span>ns-3</span><span>TCP/IP</span><span>Linux</span><span>GNUplot</span></div><div class="project-links"><a href="https://github.com/SAS2005/DTA400-ns3-labs" target="_blank" rel="noopener noreferrer"><span data-sv="Visa på GitHub" data-en="View on GitHub">Visa på GitHub</span> ↗</a></div></article>
 
-        <!-- Kontakt och nedladdningar -->
-        <section class="contact section" id="kontakt">
-          <h2><span data-sv="Hör gärna av dig." data-en="Let’s talk.">Hör gärna av dig.</span></h2>
-          <p>
-            <span
-              data-sv="Har ni en praktikplats eller söker en junior utvecklare? Skicka ett mejl så berättar jag mer om mig själv och mina projekt."
-              data-en="Have an internship opening or a junior developer role? Send me an email and I’ll tell you more about myself and my projects."
-              >Har ni en praktikplats eller söker en junior utvecklare? Skicka ett mejl så berättar
-              jag mer om mig själv och mina projekt.</span
-            >
-          </p>
-          <a class="email" href="mailto:11shucayb@gmail.com"
-            >11shucayb@gmail.com <span aria-hidden="true">↗</span></a
-          >
-          <div class="contact-links">
-            <a
-              href="https://www.linkedin.com/in/shucayb-ahmed-696b33253"
-              target="_blank"
-              rel="noreferrer"
-              ><img
-                class="link-logo"
-                src="assets/images/logos/linkedin.svg"
-                alt=""
-                width="18"
-                height="18"
-              />LinkedIn ↗</a
-            >
-            <a href="https://github.com/SAS2005" target="_blank" rel="noreferrer"
-              ><img
-                class="link-logo"
-                src="assets/images/logos/github.svg"
-                alt=""
-                width="18"
-                height="18"
-              />GitHub ↗</a
-            >
-            <a
-              href="https://www.credly.com/badges/8c6be5e0-ff0f-476c-bd60-8ed418ef4d1a/linked_in_profile"
-              target="_blank"
-              rel="noreferrer"
-              ><img
-                class="link-logo"
-                src="assets/images/logos/credly.svg"
-                alt=""
-                width="18"
-                height="18"
-              />Credly ↗</a
-            >
-            <a href="assets/documents/shucayb-ahmed-cv.pdf" download>CV ↓</a>
-            <a href="assets/documents/shucayb-ahmed-personligt-brev.pdf" download
-              ><span data-sv="Personligt brev" data-en="Cover letter">Personligt brev</span> ↓</a
-            >
-          </div>
-        </section>
-      </main>
-      <!-- Sidfot -->
-      <footer>
-        <span>Shucayb Ahmed</span
-        ><a href="#"><span data-sv="Till toppen" data-en="Back to top">Till toppen</span> ↑</a>
-      </footer>
-    </div>
-  </body>
+          <article class="project-card"><div class="project-meta"><span>Embedded Systems</span><span data-sv="Kursprojekt" data-en="University project">Kursprojekt</span></div><h3>ESP32-C6 Event-Driven System</h3><p><span data-sv="Inbyggt system på ESP32-C6 med GPIO, interrupts, IMU och touchpanel. Logiken hanterar knapp-, sensor- och touchhändelser utan blockerande väntetider." data-en="Embedded system on an ESP32-C6 using GPIO, interrupts, an IMU and a touch panel. The logic handles button, sensor and touch events without blocking delays.">Inbyggt system på ESP32-C6 med GPIO, interrupts, IMU och touchpanel. Logiken hanterar knapp-, sensor- och touchhändelser utan blockerande väntetider.</span></p><ul class="highlights"><li><span data-sv="Tillståndslogik för trafikljus och buzzer" data-en="State logic for traffic lights and a buzzer">Tillståndslogik för trafikljus och buzzer</span></li><li><span data-sv="Sensorkommunikation via I2C" data-en="Sensor communication over I2C">Sensorkommunikation via I2C</span></li></ul><div class="tech-list"><span>ESP32-C6</span><span>C/C++</span><span>GPIO</span><span>I2C</span><span>Interrupts</span><span>IMU</span></div></article>
+
+          <article class="project-card secondary-project"><div class="project-meta"><span data-sv="Ung Företagsamhet" data-en="Student enterprise">Ung Företagsamhet</span></div><h3>BASHUF</h3><p><span data-sv="Ett UF-företag som gav mig erfarenhet av att planera, samarbeta och driva ett projekt från idé till genomförande." data-en="A student enterprise that gave me experience in planning, collaboration and taking a project from idea to execution.">Ett UF-företag som gav mig erfarenhet av att planera, samarbeta och driva ett projekt från idé till genomförande.</span></p></article>
+        </div>
+      </section>
+
+      <section class="section skills" id="kunskaper">
+        <div class="section-heading"><p class="eyebrow"><span data-sv="Tekniska kunskaper" data-en="Technical skills">Tekniska kunskaper</span></p><h2><span data-sv="Verktyg jag använder i mina projekt" data-en="Tools I use in my projects">Verktyg jag använder i mina projekt</span></h2></div>
+        <div class="skill-grid">
+          <article><h3><span data-sv="Programmeringsspråk" data-en="Programming languages">Programmeringsspråk</span></h3><p>Python · C++ · JavaScript · SQL · C</p></article>
+          <article><h3>Backend</h3><p>FastAPI · REST API · JWT · Argon2</p></article>
+          <article><h3>Frontend</h3><p>HTML · CSS · JavaScript</p></article>
+          <article><h3><span data-sv="Databaser" data-en="Databases">Databaser</span></h3><p>MySQL · SQL</p></article>
+          <article><h3>AI / Machine Learning</h3><p>Binary Classification · Data Preprocessing · Model Evaluation · pandas · scikit-learn · Google Colab</p></article>
+          <article><h3><span data-sv="Nätverk &amp; system" data-en="Networking &amp; systems">Nätverk &amp; system</span></h3><p>TCP/IP · Cisco Networking · ns-3 · Linux · Windows · macOS</p></article>
+          <article><h3>Embedded Systems</h3><p>ESP32 · GPIO · I2C · Interrupts · Sensor Integration</p></article>
+          <article><h3><span data-sv="Verktyg" data-en="Tools">Verktyg</span></h3><p>Git · GitHub · GNUplot · VS Code</p></article>
+        </div>
+      </section>
+
+      <section class="section education-section" id="utbildning">
+        <div class="section-heading"><p class="eyebrow"><span data-sv="Bakgrund" data-en="Background">Bakgrund</span></p><h2><span data-sv="Utbildning &amp; certifiering" data-en="Education &amp; certification">Utbildning &amp; certifiering</span></h2></div>
+        <div class="education-list">
+          <article><span class="date">2024–</span><img class="school-logo" src="assets/images/logos/university-west.png" alt="" width="64" height="64" loading="lazy"><div><h3><span data-sv="Högskolan Väst" data-en="University West">Högskolan Väst</span></h3><p><span data-sv="Data- och nätverksteknik · Trollhättan" data-en="Data and Network Engineering · Trollhättan">Data- och nätverksteknik · Trollhättan</span></p><p class="education-note"><span data-sv="Programmering, datornätverk, databaser, distribuerade system, AI och inbyggda system." data-en="Programming, computer networks, databases, distributed systems, AI and embedded systems.">Programmering, datornätverk, databaser, distribuerade system, AI och inbyggda system.</span></p></div></article>
+          <article><span class="date">2021–2024</span><img class="school-logo school-logo-wide" src="assets/images/logos/amerikanska-gymnasiet.png" alt="" width="96" height="48" loading="lazy"><div><h3>Amerikanska Gymnasiet</h3><p><span data-sv="Teknik &amp; IT, programmering · Göteborg" data-en="Technology &amp; IT, programming · Gothenburg">Teknik &amp; IT, programmering · Göteborg</span></p></div></article>
+          <article><span class="date">Cisco</span><img class="credential-badge" src="assets/images/ccna-introduction-to-networks.png" alt="Cisco Networking Academy badge" width="76" height="76" loading="lazy"><div><h3>CCNA: Introduction to Networks</h3><p>Cisco Networking Academy</p><a href="https://www.credly.com/badges/8c6be5e0-ff0f-476c-bd60-8ed418ef4d1a/linked_in_profile" target="_blank" rel="noopener noreferrer"><span data-sv="Verifiera på Credly" data-en="Verify on Credly">Verifiera på Credly</span> ↗</a></div></article>
+        </div>
+      </section>
+
+      <section class="section contact" id="kontakt">
+        <p class="eyebrow"><span data-sv="Kontakt" data-en="Contact">Kontakt</span></p>
+        <h2><span data-sv="Söker ni en praktikant eller junior utvecklare?" data-en="Looking for an intern or junior developer?">Söker ni en praktikant eller junior utvecklare?</span></h2>
+        <p><span data-sv="Skicka gärna ett mejl. Jag berättar gärna mer om mina projekt och vad jag vill lära mig härnäst." data-en="Feel free to send me an email. I would be happy to tell you more about my projects and what I want to learn next.">Skicka gärna ett mejl. Jag berättar gärna mer om mina projekt och vad jag vill lära mig härnäst.</span></p>
+        <a class="email" href="mailto:11shucayb@gmail.com">11shucayb@gmail.com ↗</a>
+        <div class="contact-links"><a href="https://www.linkedin.com/in/shucayb-ahmed-696b33253" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="https://github.com/SAS2005" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="assets/documents/shucayb-ahmed-cv.pdf" download><span data-sv="Ladda ner CV" data-en="Download CV">Ladda ner CV</span> ↓</a><a href="assets/documents/shucayb-ahmed-personligt-brev.pdf" download><span data-sv="Personligt brev" data-en="Cover letter">Personligt brev</span> ↓</a></div>
+      </section>
+    </main>
+    <footer><span>© 2026 Shucayb Ahmed</span><a href="#hem"><span data-sv="Till toppen" data-en="Back to top">Till toppen</span> ↑</a></footer>
+  </div>
+</body>
 </html>
