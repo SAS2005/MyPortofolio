@@ -1,0 +1,91 @@
+{
+  "updated": "2026-10-06",
+  "positioning": "Software Developer | Data & Network Engineering Student",
+  "contact": {
+    "name": "Shucayb Ahmed",
+    "location": "Kungälv, Sweden",
+    "phone": "+46 73 736 82 37",
+    "email": "11shucayb@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/shucayb-ahmed-696b33253",
+    "github": "https://github.com/SAS2005",
+    "portfolio": "https://sas2005.github.io/MyPortofolio/"
+  },
+  "education": [
+    {
+      "institution": "University West / Högskolan Väst",
+      "programme": "Data and Network Engineering",
+      "location": "Trollhättan",
+      "dates": "2024-present",
+      "source": "existing CV and portfolio"
+    },
+    {
+      "institution": "Amerikanska Gymnasiet",
+      "programme": "Technology & IT / Programming",
+      "location": "Gothenburg",
+      "dates": "2021-2024",
+      "source": "existing CV and portfolio"
+    }
+  ],
+  "certifications": [
+    {
+      "name": "CCNA: Introduction to Networks",
+      "issuer": "Cisco Networking Academy",
+      "verification": "https://www.credly.com/badges/8c6be5e0-ff0f-476c-bd60-8ed418ef4d1a/linked_in_profile"
+    }
+  ],
+  "languages": ["Somali - native", "Swedish - fluent", "English - fluent"],
+  "projects": [
+    {
+      "title": "Aurora Grand Hotels",
+      "category": "Full-Stack Web Application",
+      "status": "Team project",
+      "technologies": ["Python", "FastAPI", "MySQL", "JavaScript", "HTML", "CSS", "REST API", "JWT", "Argon2"],
+      "verifiedFacts": ["FastAPI routes", "MySQL integration", "JWT authentication", "Argon2 password hashing", "booking and server-side price calculation", "optional booking extras", "email verification flow"],
+      "source": ["/Users/shucaybahmed/Documents/GitHub/Webbsida-HotelBokning"],
+      "github": "https://github.com/Ayub-Ali-Barre/Webbsida-HotelBokning"
+    },
+    {
+      "title": "VPN vs Non-VPN Network Traffic Classification",
+      "category": "AI / Machine Learning + Networking",
+      "status": "University project",
+      "technologies": ["Python", "pandas", "NumPy", "scikit-learn", "Matplotlib", "Google Colab"],
+      "verifiedFacts": ["ISCXVPN2016 15-second flow feature file", "nine numerical flow features", "binary target NonVPN=0 and VPN=1", "negative values converted to missing", "duplicates and conflicting input vectors removed", "median imputation", "stratified 80/20 split", "three-fold stratified cross-validation", "DummyClassifier baseline", "SGDClassifier with StandardScaler", "RandomForestClassifier selected", "GridSearchCV tested max_features 4, 6 and 8", "test accuracy 90.77%", "VPN precision 90.10%", "VPN recall 92.33%", "VPN F1 0.9120", "ROC-AUC 0.9678", "overfitting limitation documented"],
+      "source": ["https://colab.research.google.com/drive/1YyvYGFFRzNyneBJbhtM6DHIiM0HL6wOe"],
+      "colab": "https://colab.research.google.com/drive/1YyvYGFFRzNyneBJbhtM6DHIiM0HL6wOe"
+    },
+    {
+      "title": "TCP Congestion Control Simulation - ns-3",
+      "category": "Networking",
+      "status": "University project",
+      "technologies": ["C++", "ns-3", "TCP/IP", "Linux", "GNUplot"],
+      "verifiedFacts": ["TCP Cubic and NewReno configuration", "congestion-window trace output", "generated comparison graphs"],
+      "source": ["/Users/shucaybahmed/Desktop/DTA400-ns3-labs"],
+      "github": "https://github.com/SAS2005/DTA400-ns3-labs"
+    },
+    {
+      "title": "TAM400 - Applied AI & Machine Learning Labs",
+      "category": "AI / Machine Learning coursework",
+      "status": "University coursework",
+      "technologies": ["Python", "NumPy", "pandas", "scikit-learn", "Matplotlib", "Keras"],
+      "verifiedFacts": ["implemented BFS, DFS, A* and hill climbing", "housing-data preprocessing pipelines", "linear, decision-tree and random-forest regression", "MNIST binary and multiclass classification", "K-Means, MiniBatchKMeans and DBSCAN clustering"],
+      "source": ["TAM400AI-LAB1/Lab1.ipynb", "TAM400_Lab02_code.ipynb", "TAM400_Lab03_code_(2).ipynb", "TAM400_Lab04_code_(1).ipynb", "TAM400_Lab05_code.ipynb", "TAM400_Lab05i_code.ipynb"],
+      "github": "https://github.com/SAS2005/TAM400AI-LAB1"
+    },
+    {
+      "title": "Serial Bus Device Identification",
+      "category": "System Design",
+      "status": "In progress",
+      "technologies": ["C++", "Serial Communication", "Device Monitoring"],
+      "verifiedFacts": ["project objective and status supplied by Shucayb; no source repository located"],
+      "source": []
+    },
+    {
+      "title": "ESP32-C6 Event-Driven System",
+      "category": "Embedded Systems",
+      "status": "University project",
+      "technologies": ["C/C++", "ESP32-C6", "GPIO", "I2C", "Interrupts", "IMU"],
+      "verifiedFacts": ["project details supplied by Shucayb; no source repository located"],
+      "source": []
+    }
+  ]
+}

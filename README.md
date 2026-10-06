@@ -20,8 +20,13 @@ Then visit `http://127.0.0.1:8765/`.
 ├── css/style.css           Design, themes and responsive layout
 ├── js/script.js            Language, theme, menu and gallery
 ├── assets/
-│   ├── documents/          CV and cover letter
+│   ├── documents/
+│   │   ├── ats/            ATS CVs and cover letters in Swedish and English
+│   │   ├── portfolio/      Designed CV versions in Swedish and English
+│   │   └── templates/      Reusable cover-letter template
 │   └── images/             Profile, badges, logos and screenshots
+├── data/
+│   └── profile-source-of-truth.json  Verified facts and source links
 └── README.md
 ```
 
@@ -52,11 +57,25 @@ Open `css/style.css`:
 Replace a file with the same filename, or update its path in `index.html`.
 
 - Profile photo: `assets/images/shucayb-profile.png`
-- CV: `assets/documents/shucayb-ahmed-cv.pdf`
-- Cover letter: `assets/documents/shucayb-ahmed-personligt-brev.pdf`
+- Swedish CV: `assets/documents/ats/Shucayb-Ahmed-CV-SV.pdf`
+- English CV: `assets/documents/ats/Shucayb-Ahmed-CV-EN.pdf`
+- Swedish cover letter: `assets/documents/ats/Shucayb-Ahmed-Personligt-Brev-SV.pdf`
+- English cover letter: `assets/documents/ats/Shucayb-Ahmed-Cover-Letter-EN.pdf`
 - Aurora screenshots: `assets/images/projects/aurora/`
 
 The Aurora gallery entries are stored in `galleryItems` in `js/script.js`.
+
+Document links use `data-document-link`, `data-sv-href` and `data-en-href`.
+The JavaScript selects the correct Swedish or English file when the visitor
+changes language.
+
+## Verified content
+
+`data/profile-source-of-truth.json` records verified contact details, education,
+certification, technologies, project facts, metrics and sources. Update this file
+first when a fact changes, then update the website and documents from the same
+information. Do not add a technology or result unless you can support it with a
+repository, notebook, certificate or another primary source.
 
 ## Features
 

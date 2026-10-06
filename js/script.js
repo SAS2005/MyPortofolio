@@ -73,6 +73,9 @@ function changeLanguage(value) {
   document.querySelectorAll("[data-sv-aria-label]").forEach((element) => {
     element.setAttribute("aria-label", element.getAttribute(`data-${value}-aria-label`));
   });
+  document.querySelectorAll("[data-document-link]").forEach((link) => {
+    link.href = link.getAttribute(`data-${value}-href`);
+  });
   languageButtons.forEach((button) => button.setAttribute("aria-pressed", String(button.dataset.language === value)));
   updateTheme();
   showImage(currentImage);
