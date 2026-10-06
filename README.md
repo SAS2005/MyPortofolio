@@ -69,6 +69,10 @@ Document links use `data-document-link`, `data-sv-href` and `data-en-href`.
 The JavaScript selects the correct Swedish or English file when the visitor
 changes language.
 
+Previous document versions are retained under `assets/documents/archive/` for
+reference. They are not linked from the public portfolio. Current downloadable
+documents are stored under `assets/documents/ats/`.
+
 ## Verified content
 
 `data/profile-source-of-truth.json` records verified contact details, education,
